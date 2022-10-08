@@ -44,3 +44,4 @@ document.getElementById("backend-years").append(calculateExperience(backendStart
 document.getElementById("software-engineering-years").append(calculateExperience(softwareEngineeringStarted))
 document.getElementById("framework-years").append(calculateExperience(frameworksStarted))
 document.getElementById("years-coding").append(calculateExperience(startedCoding));
+document.getElementById("started-coding").append(startedCoding.toDateString());

@@ -1,6 +1,4 @@
 :root {
-    /* The size to use for the `rem` unit. */
-    font-size: 14px;
     /* Colours to be used for different programming language icons. */
     --python-logo: #4B8BBE;
     --js-logo: #F0DB4F;
@@ -18,7 +16,9 @@
     --nav-item-icon-color: white;
     --nav-item-spacing: .5rem;
 }
-
+/*
+** Set the icon colours.
+*/
 .fa-python {
     color: var(--python-logo);
 }
@@ -54,13 +54,17 @@
 .fa-php {
     color: var(--php-logo);
 }
-
-.nav-item span {
+/*
+** Set the contact link text properties.
+*/
+.contact-text {
     font-size: var(--nav-item-text-size);
     color: var(--nav-item-text-color);
 }
-
-.nav-item i {
+/*
+** Set the contact link icon properties.
+*/
+.contact-icon {
     font-size: var(--nav-item-icon-size);
     margin-right: var(--nav-item-spacing);
     color: var(--nav-item-icon-color);
