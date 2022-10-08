@@ -1,0 +1,80 @@
+:root {
+    /* The size to use for the `rem` unit. */
+    font-size: 14px;
+    /* Colours to be used for different programming language icons. */
+    --python-logo: #4B8BBE;
+    --js-logo: #F0DB4F;
+    --html5-logo: #f06529;
+    --css3-logo: #264de4;
+    --sass-logo: #c69;
+    --react-logo: #61DBFB;
+    --bootstrap-logo: #602C50;
+    --java-logo: #f89820;
+    --php-logo: #040405;
+    /* The font size of the text in a nav-item */
+    --nav-item-text-size: 1rem;
+    --nav-item-icon-size: calc(.5em + var(--nav-item-text-size));
+    --nav-item-text-color: white;
+    --nav-item-icon-color: white;
+    --nav-item-spacing: .5rem;
+}
+
+.fa-python {
+    color: var(--python-logo);
+}
+
+.fa-js {
+    color: var(--js-logo);
+}
+
+.fa-html5 {
+    color: var(--html5-logo);
+}
+
+.fa-css3 {
+    color: var(--css3-logo);
+}
+
+.fa-sass {
+    color: var(--sass-logo);
+}
+
+.fa-react {
+    color: var(--react-logo);
+}
+
+.fa-bootstrap {
+    color: var(--bootstrap-logo);
+}
+
+.fa-java {
+    color: var(--java-logo);
+}
+
+.fa-php {
+    color: var(--php-logo);
+}
+
+.nav-item span {
+    font-size: var(--nav-item-text-size);
+    color: var(--nav-item-text-color);
+}
+
+.nav-item i {
+    font-size: var(--nav-item-icon-size);
+    margin-right: var(--nav-item-spacing);
+    color: var(--nav-item-icon-color);
+}
+
+.nav-item>a {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-item {
+    margin: 0;
+}
+
+.nav-item:hover {
+    background-color: #010509;
+}

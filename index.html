@@ -1,3 +1,7 @@
+<!-- 
+
+ -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,85 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sulaiman Gafoor | CV</title>
-    <style>
-        :root {
-            --python-logo: #4B8BBE;
-            --js-logo: #F0DB4F;
-            --html5-logo: #f06529;
-            --css3-logo: #264de4;
-            --sass-logo: #c69;
-            --react-logo: #61DBFB;
-            --bootstrap-logo: #602C50;
-            --java-logo: #f89820;
-            --php-logo: #040405;
-
-            --nav-item-text-size: 1rem;
-            --nav-item-icon-size: calc(.5em + var(--nav-item-text-size));
-            --nav-item-text-color: white;
-            --nav-item-icon-color: white;
-            --nav-item-spacing: .5em;
-        }
-
-        .fa-python {
-            color: var(--python-logo);
-        }
-
-        .fa-js {
-            color: var(--js-logo);
-        }
-
-        .fa-html5 {
-            color: var(--html5-logo);
-        }
-
-        .fa-css3 {
-            color: var(--css3-logo);
-        }
-
-        .fa-sass {
-            color: var(--sass-logo);
-        }
-
-        .fa-react {
-            color: var(--react-logo);
-        }
-
-        .fa-bootstrap {
-            color: var(--bootstrap-logo);
-        }
-
-        .fa-java {
-            color: var(--java-logo);
-        }
-
-        .fa-php {
-            color: var(--php-logo);
-        }
-
-        .nav-item span {
-            font-size: var(--nav-item-text-size);
-            color: var(--nav-item-text-color);
-        }
-
-        .nav-item i {
-            font-size: var(--nav-item-icon-size);
-            margin-right: var(--nav-item-spacing);
-            color: var(--nav-item-icon-color);
-        }
-
-        .nav-item>a {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .nav-item {
-            margin: 0;
-        }
-
-        .nav-item:hover {
-            background-color: #010509;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
@@ -175,9 +101,7 @@
                             offset-md-2 blockquote">
                         Aspiring Software Engineer with experience in using
                         various programming languages, frameworks, and
-                        libraries for over <span id="years-coding"></span>
-                        years. Always willing to learn. Always willing to
-                        teach.
+                        libraries for <span id="years-coding"></span>.
                     </blockquote>
                 </div>
             </div>
@@ -195,7 +119,7 @@
                         </u>
                     </h4>
                     <p class="text-center">
-                        Over <span id="frontend-years"></span>
+                        <span id="frontend-years"></span>
                         invested in Frontend web development.
                     </p>
                 </div>
@@ -214,7 +138,7 @@
                         <u>Backend Web Development</u>
                     </h4>
                     <p class="text-center">
-                        Over <span id="backend-years"></span> invested
+                        <span id="backend-years"></span> invested
                         in Backend web development.
                     </p>
                 </div>
@@ -232,7 +156,7 @@
                         <u>Software Engineering</u>
                     </h4>
                     <p class="text-center">
-                        Over <span id="software-engineering-years"></span>
+                        <span id="software-engineering-years"></span>
                         invested
                         in learning Software Engineering principles.
                     </p>
@@ -249,7 +173,7 @@
                         <u>Frameworks</u>
                     </h4>
                     <p class="text-center">
-                        Over <span id="framework-years"></span> invested
+                        <span id="framework-years"></span> invested
                         in learnig Software Engineering principles.
                     </p>
                 </div>
@@ -334,26 +258,10 @@
             </ul>
         </section>
     </main>
-    <script async>
-        /** 
-        * This function creates a new Text Node with {@code year} appended with either "year" or "years" depending on if {@code year} should be plural.
-        */
-        const yearOrYears = time => document.createTextNode(time + (time > 1 ? " years" : " year"));
-        const startedCoding = new Date(2010, 06, 01);
-        const yearsCoding = new Date().getFullYear() - startedCoding.getFullYear(),
-            frontendYears = yearsCoding - 1,
-            backendYears = yearsCoding - 6,
-            softwareEngineering = yearsCoding - 11,
-            frameworkYears = yearsCoding - 4;
-        // Make years dynamic so they don't need to be updated yearly.
-        document.getElementById("frontend-years").append(yearOrYears(frontendYears))
-        document.getElementById("backend-years").append(yearOrYears(backendYears))
-        document.getElementById("software-engineering-years").append(yearOrYears(softwareEngineering))
-        document.getElementById("framework-years").append(yearOrYears(frameworkYears))
-        document.getElementById("years-coding").append(yearOrYears(yearsCoding));
-
-    </script>
+    <script src="script.js"></script>
+    <!-- Load icons from fontawesome.com -->
     <script src="https://kit.fontawesome.com/65b7334929.js" crossorigin="anonymous"></script>
+    <!-- Include the necessary script to allow the 'contact details' button to work on mobile devices. -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
